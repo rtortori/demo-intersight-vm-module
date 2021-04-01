@@ -8,8 +8,8 @@ variable "vm_size" {
   description = "The size of the VM. Accepted values: small, medium, large"
 }
 variable "cluster_name" {
-  description = "The name of the target cluster, defaults to RMLAB - Workloads"
-  default     = "RMLAB - Workloads"
+  description = "The name of the target cluster, defaults to MYCLUSTER"
+  default     = "MYCLUSTER"
 }
 variable "guest_os" {
   description = "Guest OS. Defaults to linux"
@@ -20,20 +20,20 @@ variable "adaptor_type" {
   default     = "VMXNET3"
 }
 variable "datacenter" {
-  description = "Name of the target Datacenter. Defaults to RMLAB"
-  default     = "RMLAB"
+  description = "Name of the target Datacenter. Defaults to MYDC"
+  default     = "MYDC"
 }
 variable "folder" {
-  description = "Path of the target folder. Defaults to /RMLAB/vm/rtortori"
-  default     = "/RMLAB/vm/rtortori"
+  description = "Path of the target folder. Defaults to /MYDC/vm/some_folder"
+  default     = "/MYDC/vm/some_folder"
 }
 variable "template" {
-  description = "Full path of the VM template. Defaults to /RMLAB/vm/rtortori/ubuntu-image"
-  default     = "/RMLAB/vm/rtortori/ubuntu-image"
+  description = "Full path of the VM template. Defaults to /MYDC/vm/some_folder/ubuntu-image"
+  default     = "/MYDC/vm/some_folder/ubuntu-image"
 }
 variable "datastore" {
-  description = "Name of the Datastore. Defaults to JOHNNY01_DATACENTER01"
-  default     = "JOHNNY01_DATASTORE01"
+  description = "Name of the Datastore. Defaults to MYDATASTORE"
+  default     = "MYDATASTORE"
 }
 
 locals {
